@@ -17,5 +17,5 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(googletest)
 
-add_subdirectory(1_SquareRoots)
-add_subdirectory(2_Game)
+add_subdirectory(1_square_roots)
+add_subdirectory(2_game)
