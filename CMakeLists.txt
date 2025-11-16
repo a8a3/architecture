@@ -19,3 +19,4 @@ FetchContent_MakeAvailable(googletest)
 
 add_subdirectory(1_square_roots)
 add_subdirectory(2_game)
+add_subdirectory(3_exceptions)
