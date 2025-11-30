@@ -1,13 +1,13 @@
-set(LIB_NAME exceptions_lib)
-set(TEST_NAME exceptions_test)
+set(LIB_NAME command_lib)
+set(TEST_NAME command_test)
 
-add_library(${LIB_NAME}
-    src/exceptions_impl.cpp
-    src/command_impl.cpp
-)
+add_library(${LIB_NAME} INTERFACE)
 
 target_include_directories(${LIB_NAME}
-    PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
+    INTERFACE
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
+        ${CMAKE_CURRENT_SOURCE_DIR}/../2_game/include
+        ${CMAKE_CURRENT_SOURCE_DIR}/../3_exceptions/include
 )
 
 add_executable(${TEST_NAME} test/${TEST_NAME}.cpp)
